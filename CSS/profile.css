@@ -1,0 +1,30 @@
+.profile {
+  margin-bottom: 300px;
+}
+
+.user-card {
+  font-size: 40px;
+}
+
+.profile h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  border-bottom: 2px solid #1b1725;
+  margin: 50px 60px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.plofile p {
+  font-family: 'Kosugi Maru', sans-serif;
+  letter-spacing: 10px;
+  margin-bottom: 5px;
+}
+
+.fadein-pro {
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  color: black;
+}
+/*# sourceMappingURL=profile.css.map */

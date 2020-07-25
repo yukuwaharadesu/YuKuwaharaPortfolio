@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../SCSS/access.scss"
+    ],
+    "names": [],
+    "file": "access.css"
+}

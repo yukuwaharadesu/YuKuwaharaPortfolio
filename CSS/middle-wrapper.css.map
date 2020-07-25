@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,eAAe,CAAC;EACZ,UAAU,EAAE,MAAM;CACrB;;AAED,AAAA,iBAAiB,CAAC;EACd,UAAU,EAAE,KAAK;CACpB;;AAED,AAAA,iBAAiB,CAAC,EAAE,CAAC;EACjB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,mBAAmB;EAChC,cAAc,EAAE,GAAG;CACtB;;AAED,AAAA,iBAAiB,CAAC,GAAG,CAAC;EAClB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,aAAa,EAAE,GAAG;EAClB,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "../SCSS/middle-wrapper.scss"
+    ],
+    "names": [],
+    "file": "middle-wrapper.css"
+}

@@ -1,0 +1,21 @@
+header {
+    height: 100px;
+    text-align: center;
+    
+}
+
+.nav-container {
+    text-align: center;
+    margin: 40px 70px 40px 160px;
+    
+    ul {
+        display: flex;
+        width: 960px;
+        font-size: 30px;
+        font-weight: bold;
+        justify-content: space-between;
+        text-align: center;
+        
+    }
+    
+}

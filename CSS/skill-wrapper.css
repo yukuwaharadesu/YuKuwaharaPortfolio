@@ -1,0 +1,36 @@
+.skill-wrapper {
+  text-align: center;
+}
+
+.skill-card {
+  font-size: 40px;
+  padding-top: 0;
+  margin-bottom: 5px;
+}
+
+.skill-container h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  border-bottom: 2px solid #1b1725;
+  margin: 50px 60px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.icons {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: 3;
+  align-items: center;
+  margin: 100px 300px 100px 300px;
+}
+
+.icon i {
+  font-size: 150px;
+}
+
+.icon p {
+  margin-bottom: 60px;
+}
+/*# sourceMappingURL=skill-wrapper.css.map */
