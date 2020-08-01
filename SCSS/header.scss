@@ -1,21 +1,48 @@
 header {
-    height: 100px;
-    text-align: center;
-    
+  height: 100px;
+  text-align: center;
+}
+
+#global-nav {
+  background-color: black;
+}
+
+#global-nav.m_fixed {
+  left: 0;
+  position: fixed;
+  top: 0;
 }
 
 .nav-container {
+  text-align: center;
+  padding: 40px 70px 40px 160px;
+  color: white;
+  ul {
+    display: flex;
+    width: 960px;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: space-between;
     text-align: center;
-    margin: 40px 70px 40px 160px;
-    
-    ul {
-        display: flex;
-        width: 960px;
-        font-size: 30px;
-        font-weight: bold;
-        justify-content: space-between;
-        text-align: center;
-        
-    }
-    
+  }
+}
+
+.nav-profile:hover {
+  color: lightcoral;
+}
+
+.nav-skills:hover {
+  color: aquamarine;
+}
+
+.nav-job:hover {
+  color: gold;
+}
+
+.nav-work:hover {
+  color: dodgerblue;
+}
+
+.nav-contact:hover {
+  color: mediumspringgreen;
 }

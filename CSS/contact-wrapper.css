@@ -1,5 +1,5 @@
 .contact-wrapper {
-  background-image: url("../img/photo_021");
+  background-image: url("../img/EeFikWuUwAAHVCZ.jpeg");
   background-size: cover;
   height: 800px;
 }
@@ -9,15 +9,17 @@
 }
 
 .contact-card {
+  color: white;
   font-size: 40px;
   padding-top: 0;
   margin-bottom: 5px;
 }
 
 .contact-container h3 {
-  font-family: 'Anton', sans-serif;
+  color: white;
+  font-family: "Anton", sans-serif;
   font-size: 40px;
-  border-bottom: 2px solid #1b1725;
+  border-bottom: 2px solid white;
   margin: 0 60px 50px 60px;
   padding-bottom: 40px;
   letter-spacing: 1px;

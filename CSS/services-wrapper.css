@@ -1,5 +1,5 @@
 .services-wrapper {
-  background-image: url("../img/5ecf5433d6a14-750x501");
+  background-image: url("../img/EeQBOxxVoAAg_j0.jpeg");
   background-size: cover;
   height: 950px;
 }
@@ -13,17 +13,17 @@
   font-size: 40px;
   padding-top: 0;
   margin-bottom: 5px;
-  color: white;
+  color: black;
 }
 
 .services-container h3 {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 40px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid black;
   margin: 50px 60px;
   padding-bottom: 40px;
   letter-spacing: 1px;
-  color: white;
+  color: black;
 }
 
 .s-i {

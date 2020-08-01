@@ -1,32 +1,38 @@
 footer {
-    background-color: #212529;
-    color: white;
-    height: 180px;
-    text-align: center;
+  background-color: #212529;
+  color: white;
+  height: 180px;
+  text-align: center;
 }
 
 .footer-write p {
-    margin: 0;
-    color: white;
-    letter-spacing: 2px;
-    padding: 40px 0;
+  margin: 0;
+  color: white;
+  letter-spacing: 2px;
+  padding: 40px 0;
+}
+
+.footer-sns {
+  height: 70px;
 }
 
 .footer-sns i {
-    font-size: 30px;
-    padding: 0 40px;
-    cursor: pointer;
-    color: white;
+  font-size: 30px;
+  padding: 0 40px;
+  cursor: pointer;
+  color: white;
+  height: 30px;
+  width: 50px;
 }
 
 .github:hover {
-    color: mediumpurple;
+  color: mediumpurple;
 }
 
 .twitter:hover {
-    color: #1da1f2;
+  color: #1da1f2;
 }
 
 .stack-1x:hover {
-    color: lawngreen;
+  color: lawngreen;
 }

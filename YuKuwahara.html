@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="YuKuwahara.js"></script>
 </head>
 
 <body>
@@ -28,40 +30,42 @@
         </div>
     </div>
     <header>
-        <div class="nav-container">
-            <ul>
-                <div>
-                    <i class="fas fa-address-card"></i>
-                    <a href="#me" id="pro">
-                        <li>Profile</li>
-                    </a>
-                </div>
-                <div>
-                    <i class="fas fa-lightbulb"></i>
-                    <a href="#skills" id="sl">
-                        <li>Skill</li>
-                    </a>
-                </div>
-                <div>
-                    <i class="fas fa-tasks"></i>
-                    <a href="#s-c" id="sv">
-                        <li>Services</li>
-                    </a>
-                </div>
-                <div>
-                    <i class="fas fa-laptop-code"></i>
-                    <a href="#w-c" id="wk">
-                        <li>Work</li>
-                    </a>
-                </div>
-                <div>
-                    <i class="fas fa-envelope"></i>
-                    <a href="#c-c" id="ct">
-                        <li>Contact</li>
-                    </a>
-                </div>
-            </ul>
-        </div>
+        <nav id="global-nav">
+            <div class="nav-container">
+                <ul>
+                    <div class="nav-profile">
+                        <i class="fas fa-address-card"></i>
+                        <a href="#me" id="pro">
+                            <li>Profile</li>
+                        </a>
+                    </div>
+                    <div class="nav-skills">
+                        <i class="fas fa-lightbulb"></i>
+                        <a href="#skills" id="sl">
+                            <li>Skill</li>
+                        </a>
+                    </div>
+                    <div class="nav-job">
+                        <i class="fas fa-laptop-code"></i>
+                        <a href="#s-c" id="sv">
+                            <li>Job</li>
+                        </a>
+                    </div>
+                    <div class="nav-work">
+                        <i class="fas fa-laptop-code"></i>
+                        <a href="#w-c" id="wk">
+                            <li>Work</li>
+                        </a>
+                    </div>
+                    <div class="nav-contact">
+                        <i class="fas fa-envelope"></i>
+                        <a href="#c-c" id="ct">
+                            <li>Contact</li>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="middle-wrapper">
@@ -69,6 +73,13 @@
                 <div class="about" id="me">
                     <h2>About</h2>
                     <img src="./img/unnamed.jpg">
+                    <div class="job-icon">
+                        <a href="https://github.com/yukuwaharadesu">GitHub<i class="github fab fa-github fa-2x"></i></a>
+                        <a href="https://twitter.com/@yu_wakuwaku">Twitter<i class="twitter fab fa-twitter"></i></a>
+                        <a href="mailto:freepc.kuwamandesu00@gmail.com">E-mail<i class="mail far fa-envelope"></i></a>
+                    </div>
+                    <div><a href="https://qiita.com/kuwaharadesu"><i class="fa fa-search fa-stack-1x fa-inverse fa-2x"></i></a></div>
+
                 </div>
 
                 <div class="profile">
@@ -76,12 +87,18 @@
                     <div class="fadein-pro">
                         <p>桑原　悠 （クワハラ　ユウ）</p>
                         <p>1988年4月9日生　A型 </p>
-                        <p>東京都出身/在住</p>
-                        <p>東京農業大学卒業</p>
+                        <p>東京都板橋区出身/在住</p>
+                        <p>東京農業大学国際食料情報学部卒業</p>
                         <p>趣味:サッカー・フットサル・ものつくり</p>
-                        <p>数あるPortfolioの中から私のサイトを閲覧いただきましてありがとうございます。</p>
-                        <p>これまでの経験、活躍から今後の御社での活躍まで感じて頂けますと幸いです。</p>
-                        <p>どうぞよろしくお願い致します。</p>
+                        <p class="title">〜経歴〜</p>
+                        <p>・大学までの学生時代 体育会サッカー部で15年間精進</p>
+                        <p>・住友林業株式会社　住宅営業</p>
+                        <p>・株式会社サンライズ・アカウンティング・インターナショナル　経理、アウトソーシング</p>
+                        <p class="title">〜学習〜</p>
+                        <p>2020年２月 Ruby 独学で学習</p>
+                        <p>2020年５月 JavaScript スクールにて学習</p>
+                        <p>2020年８月 サーバー、DB、デザイン、マーケット、Java、C＃、をスクールにて学習</p>
+                        <p>好きな言葉・大事にしている事　　日進月歩</p>
                     </div>
                 </div>
             </div>
@@ -113,69 +130,73 @@
                         <p>React</p>
                     </div>
                     <div class="icon">
-                        <i class="fab fa-dom"></i>
-                        <p>DOM</p>
+                        <i class="fab fa-java"></i>
+                        <p>JAVA</p>
                     </div>
                     <div class="icon">
                         <i class="fab fa-docker"></i>
                         <p>Docker</p>
                     </div>
+                    <div class="icon">
+                        <i class="fab fa-github"></i>
+                        <p>GitHub</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-php"></i>
+                        <p>PHP</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-wordpress"></i>
+                        <p>Wordpress</p>
+                    </div>
                 </div>
             </div>
         </div>
-
         <div class="services-wrapper">
             <div class="services-container" id="s-c">
-                <h3><i class="service-card fas fa-tasks"></i>Services</h3>
-
+                <h3><i class="service-card fas fa-tasks"></i>Job</h3>
                 <div class="services">
                     <div class="service">
                         <i class="s-i fas fa-laptop"></i>
-                        <h4>Webサイト制作</h4>
-                        <p class="fadein">コーポレートサイト制作 / LP制作 /
-                            コーディング代行などのWebサイト制作をお受けします。作りたいサイトを丁寧にヒアリングし、お客様が求めるWebサイト制作をお手伝いします。</p>
+                        <h4>どのような業務をしたいか？</h4>
+                        <p class="fadein"></p>
                     </div>
-
                     <div class="service">
                         <i class="s-m fas fa-mobile-alt"></i>
-                        <h4>ストップウォッチアプリ制作</h4>
-                        <p class="fadein">
-                            80%以上がスマートフォンでWebサイトを閲覧されている現在、スマホ対応にしていないWebサイトは多くの閲覧機会を逃してしまいます。<br>どの端末から見ても読みやすいWebサイトを実現し、ユーザビリティを向上させます。
-                        </p>
+                        <h4>どのようなエンジニアになりたいか？</h4>
+                        <p class="fadein"></p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <section class="work-wrapper">
             <div class="work-container" id="w-c">
-                <h3><i class="work-card fas fa-laptop-code"></i></i>Work</h3>
+                <h3><i class="work-card fas fa-laptop-code"></i>Work</h3>
                 <div class="works">
                     <div class="work">
                         <ul class="container">
-                            <li class="item">
-                                <a href="http://dawn-ebino-2113.sadist.jp/index.php">
-                                    <img src="image/cutincute.png">
+                            <li class="item">APP~CommingSoon~
+                                <a href="">
+                                    <img src="">
                                 </a>
                             </li>
-                            <li class="item">
-                                <a href="https://photos.app.goo.gl/4fDCfVTQuQt69AFX9">
-                                    <img src="image/isara.png">
+                            <li class="item">StopWatchAPP
+                                <a href="">
+                                    <img src="./img/スクリーンショット StopWatch.png">
                                 </a>
                             </li>
-                            <li class="item">
-                                <a href="https://photos.app.goo.gl/aKpvxjngR2XfxBWr5">
-                                    <img src="image/xeory.png">
+                            <li class="item">学習管理
+                                <a href="">
+                                    <img src="./img/スクリーンショット 2020-07-29 3.32.08.png">
                                 </a>
                             </li>
-                            <li class="item">
-                                <a href="https://photos.app.goo.gl/GVLGeEupVhvAVBFV6">
-                                    <img src="image/kurisuta.png">
+                            <li class="item">Blog~CommingSoon~
+                                <a href="">
+                                    <img src="">
                                 </a>
                             </li>
-                            <li class="item">
-                                <a href="https://photos.app.goo.gl/Qs2WRTFoG6BRhadg6">
-                                    <img src="image/kurisuta-jo.png">
+                            <li class="item">Quiita記事
+                                <a href="https://qiita.com/kuwaharadesu">
+                                    <img src="./img/images:quiita.png">
                                 </a>
                             </li>
                         </ul>
@@ -226,7 +247,6 @@
 
 
     </main>
-    <script src="YuKuwahara.js"></script>
 </body>
 
 </html>

@@ -12,11 +12,17 @@ footer {
   padding: 40px 0;
 }
 
+.footer-sns {
+  height: 70px;
+}
+
 .footer-sns i {
   font-size: 30px;
   padding: 0 40px;
   cursor: pointer;
   color: white;
+  height: 30px;
+  width: 50px;
 }
 
 .github:hover {
@@ -25,5 +31,9 @@ footer {
 
 .twitter:hover {
   color: #1da1f2;
+}
+
+.stack-1x:hover {
+  color: lawngreen;
 }
 /*# sourceMappingURL=footer.css.map */
