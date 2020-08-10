@@ -1,252 +1,409 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+    ></script>
     <script type="text/javascript" src="YuKuwahara.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="top-wrapper">
-        <div class="top-container">
-            <div class="heading">
-                <h2 id="title">Welcome to my portfolio</h2>
-                <div class="job-conditions">
-                    <p>ー転職希望条件ー</p>
-                    <p>希望職種：フロントエンド</p>
-                    <p>開発環境：</p>
-                    <p>学習中言語：JavaScript,React</p>
-                    <p>希望勤務場所：東京</p>
-                    <p>希望年収：280万円/年 以上</p>
-                </div>
-            </div>
+      <div class="top-container">
+        <div class="heading">
+          <h2 id="title">Welcome to my portfolio</h2>
+          <div class="job-conditions">
+            <p>ー転職希望条件ー</p>
+            <p>希望職種：フロントエンド</p>
+            <p>開発環境：</p>
+            
+            <p>学習中言語：JavaScript,React</p>
+            <p>希望勤務場所：東京</p>
+            <p>希望年収：280万円/年 以上</p>
+          </div>
         </div>
+      </div>
     </div>
     <header>
-        <nav id="global-nav">
-            <div class="nav-container">
-                <ul>
-                    <div class="nav-profile">
-                        <i class="fas fa-address-card"></i>
-                        <a href="#me" id="pro">
-                            <li>Profile</li>
-                        </a>
-                    </div>
-                    <div class="nav-skills">
-                        <i class="fas fa-lightbulb"></i>
-                        <a href="#skills" id="sl">
-                            <li>Skill</li>
-                        </a>
-                    </div>
-                    <div class="nav-job">
-                        <i class="fas fa-laptop-code"></i>
-                        <a href="#s-c" id="sv">
-                            <li>Job</li>
-                        </a>
-                    </div>
-                    <div class="nav-work">
-                        <i class="fas fa-laptop-code"></i>
-                        <a href="#w-c" id="wk">
-                            <li>Work</li>
-                        </a>
-                    </div>
-                    <div class="nav-contact">
-                        <i class="fas fa-envelope"></i>
-                        <a href="#c-c" id="ct">
-                            <li>Contact</li>
-                        </a>
-                    </div>
-                </ul>
+      <nav id="global-nav">
+        <div class="nav-container">
+          <ul>
+            <div class="nav-profile">
+              <i class="fas fa-address-card"></i>
+              <a href="#me" id="pro">
+                <li>Profile</li>
+              </a>
             </div>
-        </nav>
+            <div class="nav-skills">
+              <i class="fas fa-lightbulb"></i>
+              <a href="#skills" id="sl">
+                <li>Skill</li>
+              </a>
+            </div>
+            <div class="nav-job">
+              <i class="far fa-building"></i>
+              <a href="#s-c" id="sv">
+                <li>Job</li>
+              </a>
+            </div>
+            <div class="nav-work">
+              <i class="fas fa-laptop-code"></i>
+              <a href="#w-c" id="wk">
+                <li>Works</li>
+              </a>
+            </div>
+            <div class="nav-blog">
+              <i class="fas fa-pencil-alt"></i>
+              <a href="#b-c" id="bg">
+                <li>Blog</li>
+              </a>
+            </div>
+            <div class="nav-project">
+              <i class="fas fa-project-diagram"></i>
+              <a href="#p-c" id="pj">
+                <li>Project</li>
+              </a>
+            </div>
+            <div class="nav-contact">
+              <i class="fas fa-envelope"></i>
+              <a href="#c-c" id="ct">
+                <li>Contact</li>
+              </a>
+            </div>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="middle-wrapper">
-            <div class="middle-container">
-                <div class="about" id="me">
-                    <h2>About</h2>
-                    <img src="./img/unnamed.jpg">
-                    <div class="job-icon">
-                        <a href="https://github.com/yukuwaharadesu">GitHub<i class="github fab fa-github fa-2x"></i></a>
-                        <a href="https://twitter.com/@yu_wakuwaku">Twitter<i class="twitter fab fa-twitter"></i></a>
-                        <a href="mailto:freepc.kuwamandesu00@gmail.com">E-mail<i class="mail far fa-envelope"></i></a>
-                    </div>
-                    <div><a href="https://qiita.com/kuwaharadesu"><i class="fa fa-search fa-stack-1x fa-inverse fa-2x"></i></a></div>
-
-                </div>
-
-                <div class="profile">
-                    <h3><i class="user-card fas fa-address-card"></i>Profile</h3>
-                    <div class="fadein-pro">
-                        <p>桑原　悠 （クワハラ　ユウ）</p>
-                        <p>1988年4月9日生　A型 </p>
-                        <p>東京都板橋区出身/在住</p>
-                        <p>東京農業大学国際食料情報学部卒業</p>
-                        <p>趣味:サッカー・フットサル・ものつくり</p>
-                        <p class="title">〜経歴〜</p>
-                        <p>・大学までの学生時代 体育会サッカー部で15年間精進</p>
-                        <p>・住友林業株式会社　住宅営業</p>
-                        <p>・株式会社サンライズ・アカウンティング・インターナショナル　経理、アウトソーシング</p>
-                        <p class="title">〜学習〜</p>
-                        <p>2020年２月 Ruby 独学で学習</p>
-                        <p>2020年５月 JavaScript スクールにて学習</p>
-                        <p>2020年８月 サーバー、DB、デザイン、マーケット、Java、C＃、をスクールにて学習</p>
-                        <p>好きな言葉・大事にしている事　　日進月歩</p>
-                    </div>
-                </div>
+      <div class="middle-wrapper">
+        <div class="middle-container">
+          <div class="about" id="me">
+            <h2>About</h2>
+            <img src="./img/unnamed.jpg" />
+            <div class="job-icon">
+              <a class="url-git" href="https://github.com/yukuwaharadesu"
+                >GitHub<i class="github fab fa-github fa-2x"></i
+              ></a>
+              <a class="url-twi" href="https://twitter.com/@yu_wakuwaku"
+                >Twitter<i class="twitter fab fa-twitter"></i
+              ></a>
+              <a class="url-mai" href="mailto:freepc.kuwamandesu00@gmail.com"
+                >E-mail<i class="mail far fa-envelope"></i
+              ></a>
             </div>
+          </div>
+
+          <div class="profile">
+            <h3 class="profile-title">
+              <i class="user-card fas fa-address-card"></i>Profile
+            </h3>
+            <div class="fadein-pro">
+              <p>桑原　悠 （クワハラ　ユウ）</p>
+              <p>1988年4月9日生　A型</p>
+              <p>東京都板橋区出身/在住</p>
+              <p>東京農業大学国際食料情報学部卒業</p>
+              <p>趣味:サッカー・フットサル・ものつくり</p>
+              <p>好きな言葉・大事にしている事:　日進月歩</p>
+              <p></p>
+              <p class="title">〜Career〜</p>
+              <p>・大学までの学生時代 体育会サッカー部で15年間精進</p>
+              <p>・住友林業株式会社　住宅営業</p>
+              <p>
+                ・株式会社サンライズ・アカウンティング・インターナショナル　経理、アウトソーシング
+              </p>
+              <p></p>
+              <p class="title">〜Programming〜</p>
+              <p>2020年２月 Ruby 独学で学習</p>
+              <p>2020年５月 JavaScript スクールにて学習</p>
+              <p>
+                2020年８月
+                サーバー、DB、デザイン、マーケティング、Java、C＃、をスクールにて学習
+              </p>
+              <p>2020年10月 初案件を受注</p>
+              <p>2020年11月　共同開発案件を経験</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-wrapper">
+        <div class="skill-container" id="skills">
+          <h3><i class="skill-card fas fa-lightbulb"></i>Skill</h3>
+          <div class="icons">
+            <div class="icon">
+              <i class="fab fa-html5"></i>
+              <p>HTML5</p>
+            </div>
+            <div class="icon">
+              <i class="fab fa-css3-alt"></i>
+              <p>CSS3</p>
+            </div>
+            <div class="icon">
+              <i class="fab fa-sass"></i>
+              <p>Sass</p>
+            </div>
+            <div class="icon">
+              <i class="fab fa-js-square"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="icon">
+              <i class="fab fa-react"></i>
+              <p>React</p>
+            </div>
+            <div class="icon">
+              <i class="fab fa-java"></i>
+              <p>JAVA</p>
+            </div>
+            <div class="icon">
+              <i class="fab fa-docker"></i>
+              <p>Docker</p>
+            </div>
+            <div class="icon">
+              <i class="fab fa-github"></i>
+              <p>GitHub</p>
+            </div>
+            <div class="icon">
+              <i class="fab fa-php"></i>
+              <p>PHP</p>
+            </div>
+            <div class="icon">
+              <i class="fab fa-wordpress"></i>
+              <p>Wordpress</p>
+            </div>
+            <div class="icon">
+              <i class="fas fa-mobile-alt"></i>
+              <p>Responsive</p>
+            </div>
+            <div>
+              <img class="icon-p" src="../img/25604.jpg" alt="" />
+              <p>SQL</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="jobs-wrapper">
+        <div class="jobs-container" id="s-c">
+          <h3><i class="job-card far fa-building"></i>Job</h3>
+          <div class="job-back">
+            <div class="jobs">
+              <div class="job">
+                <h4 class="job-1">どのような業務をしたいか？</h4>
+                <div class="job-me">
+                  <p class="job-comment">
+                    ・人を快適に、便利にする事ができるWeb開発を業務として行っていきたい
+                  </p>
+                  <p class="job-comment">
+                    ・１つの事に特化するというよりも多くの工程や言語を扱える業務に携わっていきたい
+                  </p>
+                </div>
+              </div>
+              <div class="job">
+                <h4 class="job-2">どのようなエンジニアになりたいか？</h4>
+                <div class="job-me">
+                  <p class="job-comment">
+                    ・"つくる"ことに喜びを感じられ、それにより他人により良い影響を与え続けられるエンジニアになりたい
+                  </p>
+                  <p class="job-comment">
+                    ・常に変化をする事ができ、時代の中で人に”価値”を提供できるエンジニアになりたい
+                  </p>
+                  <p class="job-comment">
+                    ・つくることを楽しむ事ができ、サービスによって誰かを幸せに、笑顔にできるエンジニアになりたい
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="job-img"></div>
+          </div>
+        </div>
+      </div>
+      <div class="work-container" id="w-c">
+        <h3 class="work-title">
+          <i class="work-card fas fa-laptop-code"></i>Works
+        </h3>
+        <div class="works">
+          <div class="work">
+            <ul class="container">
+              <li class="item-A">
+                APP~ComingSoon~
+                <a href="">
+                  <img class="src-btn" src="" />
+                </a>
+              </li>
+              <li class="item-B">
+                <h5>APP概要</h5>
+                <p></p>
+                <h5>GitHubソースコード</h5>
+                <h5>どんな人達のどのような解決の為のものか</h5>
+                <p></p>
+                <h5>工夫ポイント</h5>
+                <p></p>
+                <h5>リリースしてみての結果</h5>
+                <p></p>
+              </li>
+              <li class="item-A">
+                StopWatchAPP
+                <a href="">
+                  <img
+                    class="src-btn"
+                    src="./img/スクリーンショット StopWatch.png"
+                  />
+                </a>
+              </li>
+              <li class="item-B">
+                <h5>APP概要</h5>
+                <p></p>
+                <h5>GitHubソースコード</h5>
+                <h5>どんな人達のどのような解決の為のものか</h5>
+                <p></p>
+                <h5>工夫ポイント</h5>
+                <p></p>
+                <h5>リリースしてみての結果</h5>
+                <p></p>
+              </li>
+              <li class="item-A">
+                Qiita記事
+                <a href="https://qiita.com/kuwaharadesu">
+                  <img class="src-btn" src="./img/images:quiita.png" />
+                </a>
+              </li>
+              <li class="item-B">
+                <h5>記事内容</h5>
+                
+                <p></p>
+                <h5>URL</h5>
+                <a class="url-qiita" href="https://qiita.com/kuwaharadesu"
+                  >https://qiita.com/kuwaharadesu</a
+                >
+                <h5>目的</h5>
+                <p></p>
+              </li>
+              <li class="item-A">
+                学習管理
+                <a href="">
+                  <img
+                    class="src-btn"
+                    src="./img/スクリーンショット 2020-07-29 3.32.08.png"
+                  />
+                </a>
+              </li>
+              <li class="item-B">
+                <h5>作成目的</h5>
+                <p></p>
+                <h5>効果</h5>
+                <p></p>
+                <h5>工夫したポイント</h5>
+                
+                <p></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="blog-container" id="b-c">
+        <h3 class="blog-title">
+          <i class="blog-card fas fa-pencil-alt"></i>Blog
+        </h3>
+        <ul class="container-b">
+          <li class="blog-A">
+            Blog~ComingSoon~
+            <a href="">
+              <img class="src-btn" src="" />
+            </a>
+          </li>
+          <li class="blog-B">
+            <h5>発信内容</h5>
+            <p></p>
+            <h5>目的</h5>
+            <p></p>
+            <h5>GitHubソースコード</h5>
+          </li>
+        </ul>
+      </div>
+      <div class="project-container" id="p-c">
+        <h3 class="project-title">
+          <i class="project-card fas fa-project-diagram"></i>Project
+        </h3>
+        <ul class="container-b">
+          <li class="project-A">
+            Project~ComingSoon~
+            <a href="">
+              <img class="src-btn" src="" />
+            </a>
+          </li>
+          <li class="project-B">
+            <h5>案件参加内容</h5>
+            <p></p>
+            <h5>案件での成果物</h5>
+            <p></p>
+            <h5>
+              案件で経験したこと、意識して工夫した事、実際の業務に入った時の改善点
+            </h5>
+            <p></p>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-wrapper">
+        <form action=" https:////sent.php" method="post">
+          <div class="contact-container" id="c-c">
+            <h3><i class="contact-card fas fa-envelope"></i>Contact</h3>
+
+            <div class="contact">
+              <input type="text" placeholder="氏名" name="name" />
+            </div>
+            <div class="contact">
+              <input type="email" placeholder="メールアドレス" name="mail" />
+            </div>
+            <div class="contact">
+              <textarea placeholder="お問い合わせ内容" name="detail"></textarea>
+            </div>
+
+            <input class="btn" type="submit" value="上記の内容で送信する" />
+          </div>
+        </form>
+      </div>
+
+      <footer>
+        <div class="footer-write">
+          <p>©︎ Yu Kuwahara 2020</p>
         </div>
 
+        <div class="footer-sns">
+          <a href="https://github.com/yukuwaharadesu"
+            ><i class="github fab fa-github fa-2x"></i
+          ></a>
+          <a href="https://twitter.com/@yu_wakuwaku"
+            ><i class="twitter fab fa-twitter"></i
+          ></a>
+          <a href="https://qiita.com/kuwaharadesu"
+            ><i class="fa fa-search fa-stack-1x fa-inverse fa-2x"></i
+          ></a>
 
-        <div class="skill-wrapper">
-            <div class="skill-container" id="skills">
-                <h3><i class="skill-card fas fa-lightbulb"></i>Skill</h3>
-                <div class="icons">
-                    <div class="icon">
-                        <i class="fab fa-html5"></i>
-                        <p>HTML5</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fab fa-css3-alt"></i>
-                        <p>CSS3</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fab fa-sass"></i>
-                        <p>Sass</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fab fa-js-square"></i>
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fab fa-react"></i>
-                        <p>React</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fab fa-java"></i>
-                        <p>JAVA</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fab fa-docker"></i>
-                        <p>Docker</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fab fa-github"></i>
-                        <p>GitHub</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fab fa-php"></i>
-                        <p>PHP</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fab fa-wordpress"></i>
-                        <p>Wordpress</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="services-wrapper">
-            <div class="services-container" id="s-c">
-                <h3><i class="service-card fas fa-tasks"></i>Job</h3>
-                <div class="services">
-                    <div class="service">
-                        <i class="s-i fas fa-laptop"></i>
-                        <h4>どのような業務をしたいか？</h4>
-                        <p class="fadein"></p>
-                    </div>
-                    <div class="service">
-                        <i class="s-m fas fa-mobile-alt"></i>
-                        <h4>どのようなエンジニアになりたいか？</h4>
-                        <p class="fadein"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-            <div class="work-container" id="w-c">
-                <h3><i class="work-card fas fa-laptop-code"></i>Work</h3>
-                <div class="works">
-                    <div class="work">
-                        <ul class="container">
-                            <li class="item">APP~CommingSoon~
-                                <a href="">
-                                    <img src="">
-                                </a>
-                            </li>
-                            <li class="item">StopWatchAPP
-                                <a href="">
-                                    <img src="./img/スクリーンショット StopWatch.png">
-                                </a>
-                            </li>
-                            <li class="item">学習管理
-                                <a href="">
-                                    <img src="./img/スクリーンショット 2020-07-29 3.32.08.png">
-                                </a>
-                            </li>
-                            <li class="item">Blog~CommingSoon~
-                                <a href="">
-                                    <img src="">
-                                </a>
-                            </li>
-                            <li class="item">Quiita記事
-                                <a href="https://qiita.com/kuwaharadesu">
-                                    <img src="./img/images:quiita.png">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <div class="contact-wrapper">
-            <form action=" https://gucci0324.github.io/gucciportfolio.io/sent.php" method="post">
-                <div class="contact-container" id="c-c">
-                    <h3><i class="contact-card fas fa-envelope"></i>Contact</h3>
-
-                    <div class="contact">
-                        <input type="text" placeholder="氏名" name="name">
-                    </div>
-                    <div class="contact">
-                        <input type="email" placeholder="メールアドレス" name="mail">
-                    </div>
-                    <div class="contact">
-                        <textarea placeholder="お問い合わせ内容" name="detail"></textarea>
-                    </div>
-
-                    <input class="btn" type="submit" value="上記の内容で送信する">
-                </div>
-            </form>
+          <!-- 一番下のQuiitaのコードを記載するとブラウザ上で全てURLがQittaになってしまう。。。 -->
         </div>
 
-        <footer>
-            <div class="footer-write">
-                <p>©︎ Yu Kuwahara 2020</p>
-            </div>
-
-            <div class="footer-sns">
-
-                <a href="https://github.com/yukuwaharadesu"><i class="github fab fa-github fa-2x"></i></a>
-                <a href="https://twitter.com/@yu_wakuwaku"><i class="twitter fab fa-twitter"></i></a>
-                <a href="https://qiita.com/kuwaharadesu"><i class="fa fa-search fa-stack-1x fa-inverse fa-2x"></i></a>
-
-                <!-- 一番下のQuiitaのコードを記載するとブラウザ上で全てURLがQittaになってしまう。。。 -->
-            </div>
-
-            <!-- <span class="fa-stack" style="color:#4cb10d">
+        <!-- <span class="fa-stack" style="color:#4cb10d">
                 <i class="fa fa-square fa-stack-2x"></i>
                 <i class="fa fa-search fa-stack-1x fa-inverse fa-2x"></i>
             </span> -->
-        </footer>
-
-
+      </footer>
     </main>
-</body>
-
+  </body>
 </html>

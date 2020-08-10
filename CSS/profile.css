@@ -1,9 +1,15 @@
 .profile {
-  margin-bottom: 300px;
+  height: 1100px;
+  background-color: #3f3d3d;
+  padding-top: 5px;
 }
 
 .title {
   font-weight: bolder;
+}
+
+.profile-title {
+  color: white;
 }
 
 .user-card {
@@ -11,9 +17,9 @@
 }
 
 .profile h3 {
-  font-family: "Anton", sans-serif;
+  font-family: "Allerta Stencil", sans-serif;
   font-size: 40px;
-  border-bottom: 2px solid #1b1725;
+  border-bottom: 2px solid white;
   margin: 50px 60px;
   padding-bottom: 40px;
   letter-spacing: 1px;
@@ -29,6 +35,6 @@
   font-size: 24px;
   letter-spacing: 0.1em;
   line-height: 2em;
-  color: black;
+  color: white;
 }
 /*# sourceMappingURL=profile.css.map */

@@ -18,10 +18,11 @@
 }
 
 .heading #title {
-  font-size: 60px;
+  font-size: 80px;
   font-weight: bold;
   margin: 60px;
   color: white;
+  font-family: "Allerta Stencil", sans-serif;
 }
 
 .job-conditions {

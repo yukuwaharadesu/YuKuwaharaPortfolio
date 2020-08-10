@@ -1,11 +1,14 @@
 .works {
-  height: 1000px;
+  height: 2500px;
 }
 
 .work-container {
+  margin-bottom: 200px;
+  height: 2500px;
+}
+
+.work-title {
   text-align: center;
-  margin-bottom: 60px;
-  height: 1500px;
 }
 
 .work-card {
@@ -14,7 +17,7 @@
   margin-bottom: 5px;
 }
 .work-container h3 {
-  font-family: "Anton", sans-serif;
+  font-family: "Allerta Stencil", sans-serif;
   font-size: 40px;
   border-bottom: 2px solid rgb(27, 23, 37);
   margin: 0 60px 50px 60px;
@@ -28,15 +31,70 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.item {
+.item-A {
+  font-family: "Allerta Stencil", sans-serif;
+  text-align: center;
   margin-bottom: 10%;
   line-height: 50px;
   font-weight: bolder;
+  margin-top: 100px;
+  margin-left: 70px;
+  font-size: 30px;
+  font-weight: bold;
 }
+
+.item-B {
+  font-family: "Allerta Stencil", sans-serif;
+  margin-bottom: 10%;
+  margin-left: 100px;
+  margin-top: 100px;
+  line-height: 50px;
+  font-weight: bolder;
+}
+
 .container img {
   width: 80%;
   height: 100%;
   display: block;
   margin-left: 5rem;
   margin-bottom: 1rem;
+}
+
+.h5 {
+  font-weight: bold;
+}
+
+a:link {
+  color: black;
+}
+
+.url-qiita:hover {
+  color: rgb(111, 212, 9);
+  text-decoration: underline;
+}
+
+.src-btn {
+  position: relative;
+  -webkit-transition: none;
+  transition: none;
+  margin-top: 40px;
+  border-radius: 4px;
+  height: 55px;
+  width: 50%;
+  background-color: lightslategray;
+  box-shadow: 5px 5px 0 #212529;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+}
+
+.src-btn:hover {
+  top: -4px;
+  box-shadow: 10px 10px 0 #212529;
+}
+
+.src-btn:active {
+  box-shadow: none;
+  top: 3px;
 }

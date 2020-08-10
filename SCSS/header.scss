@@ -4,7 +4,8 @@ header {
 }
 
 #global-nav {
-  background-color: black;
+  background-color: #212529;
+  font-family: "Allerta Stencil", sans-serif;
 }
 
 #global-nav.m_fixed {
@@ -15,12 +16,12 @@ header {
 
 .nav-container {
   text-align: center;
-  padding: 40px 70px 40px 160px;
+  padding: 40px 70px 40px 100px;
   color: white;
   ul {
     display: flex;
-    width: 960px;
-    font-size: 30px;
+    width: 1060px;
+    font-size: 25px;
     font-weight: bold;
     justify-content: space-between;
     text-align: center;
@@ -28,21 +29,29 @@ header {
 }
 
 .nav-profile:hover {
-  color: lightcoral;
+  color: rgb(224, 145, 116);
 }
 
 .nav-skills:hover {
-  color: aquamarine;
+  color: rgb(224, 145, 116);
 }
 
 .nav-job:hover {
-  color: gold;
+  color: rgb(224, 145, 116);
 }
 
 .nav-work:hover {
-  color: dodgerblue;
+  color: rgb(224, 145, 116);
+}
+
+.nav-blog:hover {
+  color: rgb(224, 145, 116);
+}
+
+.nav-project:hover {
+  color: rgb(224, 145, 116);
 }
 
 .nav-contact:hover {
-  color: mediumspringgreen;
+  color: rgb(224, 145, 116);
 }

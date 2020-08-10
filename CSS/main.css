@@ -130,10 +130,11 @@ input, select {
 }
 
 .heading #title {
-  font-size: 60px;
+  font-size: 80px;
   font-weight: bold;
   margin: 60px;
   color: white;
+  font-family: "Allerta Stencil", sans-serif;
 }
 
 .job-conditions {
@@ -149,7 +150,8 @@ header {
 }
 
 #global-nav {
-  background-color: black;
+  background-color: #212529;
+  font-family: "Allerta Stencil", sans-serif;
 }
 
 #global-nav.m_fixed {
@@ -160,41 +162,50 @@ header {
 
 .nav-container {
   text-align: center;
-  padding: 40px 70px 40px 160px;
+  padding: 40px 70px 40px 100px;
   color: white;
 }
 
 .nav-container ul {
   display: flex;
-  width: 960px;
-  font-size: 30px;
+  width: 1060px;
+  font-size: 25px;
   font-weight: bold;
   justify-content: space-between;
   text-align: center;
 }
 
 .nav-profile:hover {
-  color: lightcoral;
+  color: #e09174;
 }
 
 .nav-skills:hover {
-  color: aquamarine;
+  color: #e09174;
 }
 
 .nav-job:hover {
-  color: gold;
+  color: #e09174;
 }
 
 .nav-work:hover {
-  color: dodgerblue;
+  color: #e09174;
+}
+
+.nav-blog:hover {
+  color: #e09174;
+}
+
+.nav-project:hover {
+  color: #e09174;
 }
 
 .nav-contact:hover {
-  color: mediumspringgreen;
+  color: #e09174;
 }
 
 .middle-wrapper {
   text-align: center;
+  font-family: "Allerta Stencil", sans-serif;
 }
 
 .middle-container {
@@ -203,7 +214,7 @@ header {
 
 .middle-container h2 {
   font-size: 50px;
-  font-family: "Anton", sans-serif;
+  font-family: "Allerta Stencil", sans-serif;
   letter-spacing: 1px;
 }
 
@@ -238,12 +249,30 @@ header {
   color: #ff6a2f;
 }
 
+.url-mai:hover {
+  color: #ff6a2f;
+}
+
+.url-git:hover {
+  color: mediumpurple;
+}
+
+.url-twi:hover {
+  color: #1da1f2;
+}
+
 .profile {
-  margin-bottom: 300px;
+  height: 1100px;
+  background-color: #3f3d3d;
+  padding-top: 5px;
 }
 
 .title {
   font-weight: bolder;
+}
+
+.profile-title {
+  color: white;
 }
 
 .user-card {
@@ -251,9 +280,9 @@ header {
 }
 
 .profile h3 {
-  font-family: "Anton", sans-serif;
+  font-family: "Allerta Stencil", sans-serif;
   font-size: 40px;
-  border-bottom: 2px solid #1b1725;
+  border-bottom: 2px solid white;
   margin: 50px 60px;
   padding-bottom: 40px;
   letter-spacing: 1px;
@@ -269,7 +298,7 @@ header {
   font-size: 24px;
   letter-spacing: 0.1em;
   line-height: 2em;
-  color: black;
+  color: white;
 }
 
 .skill-wrapper {
@@ -283,7 +312,7 @@ header {
 }
 
 .skill-container h3 {
-  font-family: 'Anton', sans-serif;
+  font-family: "Allerta Stencil", sans-serif;
   font-size: 40px;
   border-bottom: 2px solid #1b1725;
   margin: 50px 60px;
@@ -306,103 +335,119 @@ header {
 
 .icon p {
   margin-bottom: 60px;
+  font-family: "Allerta Stencil", sans-serif;
 }
 
-.services-wrapper {
-  background-image: url("../img/EeQBOxxVoAAg_j0.jpeg");
-  background-size: cover;
-  height: 950px;
+.icon-p {
+  height: 190px;
 }
 
-.services-container {
+.jobs-wrapper {
+  height: 1150px;
+}
+
+.jobs-container {
   text-align: center;
   padding-top: 50px;
 }
 
-.service-card {
+.job-card {
   font-size: 40px;
   padding-top: 0;
   margin-bottom: 5px;
   color: black;
 }
 
-.services-container h3 {
-  font-family: "Anton", sans-serif;
+.jobs-container h3 {
+  font-family: "Allerta Stencil", sans-serif;
   font-size: 40px;
   border-bottom: 2px solid black;
-  margin: 50px 60px;
+  margin: 30px 60px;
   padding-bottom: 40px;
   letter-spacing: 1px;
   color: black;
 }
 
-.s-i {
-  border: 1px solid white;
-  border-radius: 50%;
-  font-size: 40px;
-  padding: 50px;
-  background-color: white;
+.job-back {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.s-m {
-  border: 1px solid white;
-  border-radius: 50%;
-  font-size: 40px;
-  padding: 50px 60px 50px 60px;
-  background-color: white;
+.job-img {
+  background-image: url("../img/a0001402_parts_5976ae8ad8f72.jpg");
+  background-size: 150%;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  margin-right: 55px;
+  height: 850px;
+  background-position: 25% 1%;
 }
 
-.services {
-  display: flex;
+.jobs {
   flex-direction: column;
 }
 
-.service {
-  margin-top: 10px;
-  margin-bottom: 30px;
+.job {
+  display: block;
+  justify-content: space-between;
+  margin-left: 50px;
+  width: 550px;
 }
 
-.service h4 {
+.job-1 {
+  margin-top: 100px;
+  margin-left: 30px;
+  width: 450px;
+}
+
+.job-2 {
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+.job h4 {
   color: black;
   font-size: 25px;
+  font-weight: bold;
   letter-spacing: 2px;
-  margin: 30px 450px;
-  padding: 20px 0;
-  background-color: white;
-  opacity: 0.9;
+  opacity: 1;
 }
 
-.service p {
-  text-align: center;
-  display: inline-block;
-  font-size: 15px;
-  margin: 0 200px;
-  color: white;
+.job-1:hover {
+  color: black;
+}
+
+.job-2:hover {
+  color: black;
+}
+
+.job-me {
+  height: 200px;
+  width: 460px;
+  margin-left: 50px;
+  margin-top: 50px;
+  color: black;
+}
+
+.job-comment {
+  font-weight: bold;
+  color: black;
+  font-size: 17px;
+  letter-spacing: 3px;
   line-height: 30px;
 }
 
-.fadein {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 1s;
-  color: black;
-}
-
-.fadein p {
-  font-size: 20px;
-  letter-spacing: 2px;
-  line-height: 55px;
-  color: black;
-}
-
 .works {
-  height: 1000px;
+  height: 2500px;
 }
 
 .work-container {
+  margin-bottom: 200px;
+  height: 2500px;
+}
+
+.work-title {
   text-align: center;
-  margin-bottom: 60px;
-  height: 1500px;
 }
 
 .work-card {
@@ -412,7 +457,7 @@ header {
 }
 
 .work-container h3 {
-  font-family: "Anton", sans-serif;
+  font-family: "Allerta Stencil", sans-serif;
   font-size: 40px;
   border-bottom: 2px solid #1b1725;
   margin: 0 60px 50px 60px;
@@ -426,8 +471,23 @@ header {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.item {
+.item-A {
+  font-family: "Allerta Stencil", sans-serif;
+  text-align: center;
   margin-bottom: 10%;
+  line-height: 50px;
+  font-weight: bolder;
+  margin-top: 100px;
+  margin-left: 70px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.item-B {
+  font-family: "Allerta Stencil", sans-serif;
+  margin-bottom: 10%;
+  margin-left: 100px;
+  margin-top: 100px;
   line-height: 50px;
   font-weight: bolder;
 }
@@ -436,6 +496,168 @@ header {
   width: 80%;
   height: 100%;
   display: block;
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+}
+
+.h5 {
+  font-weight: bold;
+}
+
+a:link {
+  color: black;
+}
+
+.url-qiita:hover {
+  color: #6fd409;
+  text-decoration: underline;
+}
+
+.src-btn {
+  position: relative;
+  transition: none;
+  margin-top: 40px;
+  border-radius: 4px;
+  height: 55px;
+  width: 50%;
+  background-color: lightslategray;
+  box-shadow: 5px 5px 0 #212529;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+}
+
+.src-btn:hover {
+  top: -4px;
+  box-shadow: 10px 10px 0 #212529;
+}
+
+.src-btn:active {
+  box-shadow: none;
+  top: 3px;
+}
+
+.blog-container {
+  padding-bottom: 200px;
+  height: 1000px;
+  background-color: #eff0f1;
+}
+
+.blog-title {
+  text-align: center;
+}
+
+.blog-card {
+  color: black;
+  font-size: 40px;
+  padding-top: 0;
+  margin-bottom: 5px;
+  opacity: 1;
+}
+
+.blog-container h3 {
+  color: black;
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 45px;
+  border-bottom: 2px solid black;
+  margin: 0 60px 50px 60px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+  padding-top: 50px;
+  opacity: 1;
+}
+
+.container-b {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.blog-A {
+  font-family: "Allerta Stencil", sans-serif;
+  text-align: center;
+  margin-bottom: 10%;
+  line-height: 50px;
+  font-weight: bolder;
+  margin-top: 150px;
+  margin-left: 70px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.blog-B {
+  font-family: "Allerta Stencil", sans-serif;
+  margin-bottom: 10%;
+  margin-left: 100px;
+  margin-top: 120px;
+  line-height: 100px;
+  font-weight: bolder;
+  font-size: 20px;
+  color: black;
+}
+
+.container-b img {
+  width: 80%;
+  height: 100%;
+  display: block;
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+}
+
+.project-container {
+  padding-bottom: 200px;
+  height: 1000px;
+  background-color: #3f3d3d;
+}
+
+.project-title {
+  text-align: center;
+}
+
+.project-card {
+  color: white;
+  font-size: 40px;
+  padding-top: 0;
+  margin-bottom: 5px;
+}
+
+.project-container h3 {
+  color: white;
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 40px;
+  border-bottom: 2px solid white;
+  margin: 0 60px 50px 60px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+  padding-top: 50px;
+}
+
+.project-A {
+  font-family: "Allerta Stencil", sans-serif;
+  text-align: center;
+  margin-bottom: 10%;
+  line-height: 20px;
+  margin-top: 150px;
+  margin-left: 70px;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.project-B {
+  font-family: "Allerta Stencil", sans-serif;
+  margin: 150px 60px 40px 110px;
+  line-height: 80px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.project-A img {
+  width: 450px;
+  height: 270px;
+  display: block;
+  margin-top: 4rem;
   margin-left: 5rem;
   margin-bottom: 1rem;
 }
@@ -459,7 +681,7 @@ header {
 
 .contact-container h3 {
   color: white;
-  font-family: "Anton", sans-serif;
+  font-family: "Allerta Stencil", sans-serif;
   font-size: 40px;
   border-bottom: 2px solid white;
   margin: 0 60px 50px 60px;
@@ -490,21 +712,28 @@ header {
 }
 
 .btn {
+  position: relative;
+  transition: none;
   margin-top: 40px;
-  border-radius: 6px;
+  border-radius: 4px;
   height: 55px;
   width: 50%;
   background-color: lightslategray;
-  box-shadow: 0 7px gray;
+  box-shadow: 0 3px 0 gray;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   color: white;
   font-size: 15px;
 }
 
+.btn:hover {
+  top: -4px;
+  box-shadow: 0 7px 0 gray;
+}
+
 .btn:active {
   box-shadow: none;
-  position: relative;
-  top: 7px;
+  top: 3px;
 }
 
 footer {
@@ -515,6 +744,7 @@ footer {
 }
 
 .footer-write p {
+  font-family: "Allerta Stencil", sans-serif;
   margin: 0;
   color: white;
   letter-spacing: 2px;

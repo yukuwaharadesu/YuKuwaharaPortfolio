@@ -1,5 +1,6 @@
 .middle-wrapper {
   text-align: center;
+  font-family: "Allerta Stencil", sans-serif;
 }
 
 .middle-container {
@@ -8,7 +9,7 @@
 
 .middle-container h2 {
   font-size: 50px;
-  font-family: "Anton", sans-serif;
+  font-family: "Allerta Stencil", sans-serif;
   letter-spacing: 1px;
 }
 
@@ -40,4 +41,16 @@
 
 .mail:hover {
   color: rgb(255, 106, 47);
+}
+
+.url-mai:hover {
+  color: rgb(255, 106, 47);
+}
+
+.url-git:hover {
+  color: mediumpurple;
+}
+
+.url-twi:hover {
+  color: #1da1f2;
 }
