@@ -41,6 +41,9 @@
   margin-left: 70px;
   font-size: 30px;
   font-weight: bold;
+  transform: translateX(-80px);
+  opacity: 0;
+  transition: opacity 4.5s, transform 5.5s;
 }
 
 .item-B {
@@ -50,6 +53,13 @@
   margin-top: 100px;
   line-height: 50px;
   font-weight: bolder;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 5s;
+}
+.fadein-job {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .container img {

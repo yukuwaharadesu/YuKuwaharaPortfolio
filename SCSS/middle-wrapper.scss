@@ -4,7 +4,7 @@
 }
 
 .middle-container {
-  margin-top: 250px;
+  margin-top: 170px;
 }
 
 .middle-container h2 {
@@ -19,6 +19,15 @@
   border-radius: 50%;
   padding: 30px;
 }
+
+.my-image {
+  height: 350px;
+}
+
+.about {
+  padding-top: 50px;
+}
+
 .job-icon {
   height: 180px;
   font-size: 30px;
@@ -53,4 +62,58 @@
 
 .url-twi:hover {
   color: #1da1f2;
+}
+
+.fadein {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 4.5s, transform 10.5s;
+}
+
+.fadein-pro {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 7s;
+}
+
+.title-A {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 10s;
+}
+
+.title-B {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 13s;
+}
+
+.my-image ul {
+  position: relative;
+}
+.my-image li {
+  position: absolute;
+  width: 100%;
+}
+
+#button {
+  height: 14px;
+  ul {
+    text-align: center;
+  }
+  li a {
+    text-indent: -9999px;
+    text-decoration: none;
+    display: inline;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background: #1da1f2;
+    justify-content: space-between;
+  }
+}
+
+.target {
+  height: 14px;
+  text-align: center;
 }

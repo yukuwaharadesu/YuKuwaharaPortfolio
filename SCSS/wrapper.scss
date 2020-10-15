@@ -1,8 +1,7 @@
 .top-container {
   background-size: cover;
-  background-image: url("../img/EQK8N3KVAAAZFGi.jpeg");
-
-  height: 700px;
+  background-attachment: fixed;
+  height: 635px;
   color: white;
   margin: 0;
   padding: 0;
@@ -15,6 +14,9 @@
     margin: 60px;
     color: white;
     font-family: "Allerta Stencil", sans-serif;
+  }
+  #title span {
+    opacity: 0;
   }
   font-family: "Anton", sans-serif;
   font-size: 20px;

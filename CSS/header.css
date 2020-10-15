@@ -1,11 +1,17 @@
 header {
-  height: 100px;
+  height: 70px;
   text-align: center;
 }
 
 #global-nav {
   background-color: #212529;
   font-family: "Allerta Stencil", sans-serif;
+  color: white;
+  top: 0;
+  left: 0;
+  height: 85px;
+  width: 100%;
+  z-index: 4;
 }
 
 #global-nav.m_fixed {
@@ -16,7 +22,7 @@ header {
 
 .nav-container {
   text-align: center;
-  padding: 40px 70px 40px 100px;
+  padding: 20px 70px 0px 100px;
   color: white;
 }
 
@@ -27,9 +33,18 @@ header {
   font-weight: bold;
   justify-content: space-between;
   text-align: center;
+  margin: 0%;
+}
+
+.nav-container li {
+  color: white;
 }
 
 .nav-profile:hover {
+  color: #e09174;
+}
+
+.nav-profile:hover li {
   color: #e09174;
 }
 
@@ -37,7 +52,15 @@ header {
   color: #e09174;
 }
 
+.nav-skills:hover li {
+  color: #e09174;
+}
+
 .nav-job:hover {
+  color: #e09174;
+}
+
+.nav-job:hover li {
   color: #e09174;
 }
 
@@ -45,7 +68,15 @@ header {
   color: #e09174;
 }
 
+.nav-work:hover li {
+  color: #e09174;
+}
+
 .nav-blog:hover {
+  color: #e09174;
+}
+
+.nav-blog:hover li {
   color: #e09174;
 }
 
@@ -53,7 +84,15 @@ header {
   color: #e09174;
 }
 
+.nav-project:hover li {
+  color: #e09174;
+}
+
 .nav-contact:hover {
+  color: #e09174;
+}
+
+.nav-contact:hover li {
   color: #e09174;
 }
 /*# sourceMappingURL=header.css.map */

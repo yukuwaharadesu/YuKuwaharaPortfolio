@@ -112,8 +112,8 @@ input, select {
 }
 .top-container {
   background-size: cover;
-  background-image: url("../img/EQK8N3KVAAAZFGi.jpeg");
-  height: 700px;
+  background-attachment: fixed;
+  height: 635px;
   color: white;
   margin: 0;
   padding: 0;
@@ -137,6 +137,10 @@ input, select {
   font-family: "Allerta Stencil", sans-serif;
 }
 
+.heading #title span {
+  opacity: 0;
+}
+
 .job-conditions {
   margin: 160px 380px 80px;
   background-color: white;
@@ -145,13 +149,19 @@ input, select {
 }
 
 header {
-  height: 100px;
+  height: 70px;
   text-align: center;
 }
 
 #global-nav {
   background-color: #212529;
   font-family: "Allerta Stencil", sans-serif;
+  color: white;
+  top: 0;
+  left: 0;
+  height: 85px;
+  width: 100%;
+  z-index: 4;
 }
 
 #global-nav.m_fixed {
@@ -162,7 +172,7 @@ header {
 
 .nav-container {
   text-align: center;
-  padding: 40px 70px 40px 100px;
+  padding: 20px 70px 0px 100px;
   color: white;
 }
 
@@ -173,9 +183,18 @@ header {
   font-weight: bold;
   justify-content: space-between;
   text-align: center;
+  margin: 0%;
+}
+
+.nav-container li {
+  color: white;
 }
 
 .nav-profile:hover {
+  color: #e09174;
+}
+
+.nav-profile:hover li {
   color: #e09174;
 }
 
@@ -183,7 +202,15 @@ header {
   color: #e09174;
 }
 
+.nav-skills:hover li {
+  color: #e09174;
+}
+
 .nav-job:hover {
+  color: #e09174;
+}
+
+.nav-job:hover li {
   color: #e09174;
 }
 
@@ -191,7 +218,15 @@ header {
   color: #e09174;
 }
 
+.nav-work:hover li {
+  color: #e09174;
+}
+
 .nav-blog:hover {
+  color: #e09174;
+}
+
+.nav-blog:hover li {
   color: #e09174;
 }
 
@@ -199,7 +234,15 @@ header {
   color: #e09174;
 }
 
+.nav-project:hover li {
+  color: #e09174;
+}
+
 .nav-contact:hover {
+  color: #e09174;
+}
+
+.nav-contact:hover li {
   color: #e09174;
 }
 
@@ -209,7 +252,7 @@ header {
 }
 
 .middle-container {
-  margin-top: 250px;
+  margin-top: 170px;
 }
 
 .middle-container h2 {
@@ -223,6 +266,14 @@ header {
   height: 350px;
   border-radius: 50%;
   padding: 30px;
+}
+
+.my-image {
+  height: 350px;
+}
+
+.about {
+  padding-top: 50px;
 }
 
 .job-icon {
@@ -259,6 +310,63 @@ header {
 
 .url-twi:hover {
   color: #1da1f2;
+}
+
+.fadein {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 4.5s, transform 10.5s;
+}
+
+.fadein-pro {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 7s;
+}
+
+.title-A {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 10s;
+}
+
+.title-B {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 13s;
+}
+
+.my-image ul {
+  position: relative;
+}
+
+.my-image li {
+  position: absolute;
+  width: 100%;
+}
+
+#button {
+  height: 14px;
+}
+
+#button ul {
+  text-align: center;
+}
+
+#button li a {
+  text-indent: -9999px;
+  text-decoration: none;
+  display: inline;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background: #1da1f2;
+  justify-content: space-between;
+}
+
+.target {
+  height: 14px;
+  text-align: center;
 }
 
 .profile {
@@ -299,6 +407,15 @@ header {
   letter-spacing: 0.1em;
   line-height: 2em;
   color: white;
+  text-align: left;
+  padding-left: 6em;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 5s;
+}
+
+.skill-title {
+  padding-top: 50px;
 }
 
 .skill-wrapper {
@@ -347,7 +464,6 @@ header {
 }
 
 .jobs-container {
-  text-align: center;
   padding-top: 50px;
 }
 
@@ -366,6 +482,7 @@ header {
   padding-bottom: 40px;
   letter-spacing: 1px;
   color: black;
+  text-align: center;
 }
 
 .job-back {
@@ -373,14 +490,28 @@ header {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.job-box {
+  width: 630px;
+}
+
 .job-img {
   background-image: url("../img/a0001402_parts_5976ae8ad8f72.jpg");
   background-size: 150%;
   background-repeat: no-repeat;
-  margin-top: 70px;
-  margin-right: 55px;
-  height: 850px;
+  float: right;
+  margin-top: 85px;
+  margin-left: 70px;
+  height: 1300px;
+  width: 520px;
   background-position: 25% 1%;
+  transform: translateX(-80px);
+  opacity: 0;
+  transition: opacity 4.5s, transform 7.5s;
+}
+
+.fadein-job {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .jobs {
@@ -396,13 +527,19 @@ header {
 
 .job-1 {
   margin-top: 100px;
-  margin-left: 30px;
+  margin-left: 60px;
   width: 450px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 7s;
 }
 
 .job-2 {
   margin-top: 50px;
   margin-left: 60px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 7s;
 }
 
 .job h4 {
@@ -413,28 +550,34 @@ header {
   opacity: 1;
 }
 
-.job-1:hover {
-  color: black;
-}
-
-.job-2:hover {
-  color: black;
-}
-
 .job-me {
-  height: 200px;
+  height: 150px;
   width: 460px;
   margin-left: 50px;
   margin-top: 50px;
   color: black;
 }
 
-.job-comment {
+.job-comment-1 {
   font-weight: bold;
   color: black;
   font-size: 17px;
   letter-spacing: 3px;
   line-height: 30px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 14s;
+}
+
+.job-comment-2 {
+  font-weight: bold;
+  color: black;
+  font-size: 17px;
+  letter-spacing: 3px;
+  line-height: 30px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 19s;
 }
 
 .works {
@@ -481,6 +624,9 @@ header {
   margin-left: 70px;
   font-size: 30px;
   font-weight: bold;
+  transform: translateX(-80px);
+  opacity: 0;
+  transition: opacity 4.5s, transform 5.5s;
 }
 
 .item-B {
@@ -490,6 +636,14 @@ header {
   margin-top: 100px;
   line-height: 50px;
   font-weight: bolder;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 5s;
+}
+
+.fadein-job {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .container img {
@@ -540,7 +694,7 @@ a:link {
 
 .blog-container {
   padding-bottom: 200px;
-  height: 1000px;
+  height: 1200px;
   background-color: #eff0f1;
 }
 
@@ -577,9 +731,9 @@ a:link {
   font-family: "Allerta Stencil", sans-serif;
   text-align: center;
   margin-bottom: 10%;
-  line-height: 50px;
+  line-height: 80px;
   font-weight: bolder;
-  margin-top: 150px;
+  margin-top: 20px;
   margin-left: 70px;
   font-size: 60px;
   font-weight: bold;
@@ -588,9 +742,10 @@ a:link {
 .blog-B {
   font-family: "Allerta Stencil", sans-serif;
   margin-bottom: 10%;
-  margin-left: 100px;
-  margin-top: 120px;
-  line-height: 100px;
+  margin-left: 95px;
+  margin-top: 20px;
+  margin-right: 27px;
+  line-height: 50px;
   font-weight: bolder;
   font-size: 20px;
   color: black;
@@ -598,10 +753,19 @@ a:link {
 
 .container-b img {
   width: 80%;
-  height: 100%;
+  height: 300px;
   display: block;
   margin-left: 5rem;
   margin-bottom: 1rem;
+}
+
+.blog-name {
+  font-size: 40px;
+}
+
+.url-blog:hover {
+  color: #50bcdd;
+  text-decoration: underline;
 }
 
 .project-container {
@@ -637,11 +801,12 @@ a:link {
   text-align: center;
   margin-bottom: 10%;
   line-height: 20px;
-  margin-top: 150px;
+  margin-top: 90px;
   margin-left: 70px;
   font-size: 50px;
   font-weight: bold;
   color: white;
+  line-height: 1em;
 }
 
 .project-B {
@@ -663,7 +828,7 @@ a:link {
 }
 
 .contact-wrapper {
-  background-image: url("../img/EeFikWuUwAAHVCZ.jpeg");
+  background-image: url("../img/toshin.jpg");
   background-size: cover;
   height: 800px;
 }
@@ -718,7 +883,7 @@ a:link {
   border-radius: 4px;
   height: 55px;
   width: 50%;
-  background-color: lightslategray;
+  background-color: #3f3d3d;
   box-shadow: 0 3px 0 gray;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   cursor: pointer;
@@ -734,6 +899,25 @@ a:link {
 .btn:active {
   box-shadow: none;
   top: 3px;
+}
+
+#for_top {
+  position: fixed;
+  bottom: 10px;
+  right: 40px;
+  z-index: 10;
+  color: black;
+  font-weight: bolder;
+  background-color: whitesmoke;
+  padding: 0;
+  margin: 0;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  opacity: 0.8;
 }
 
 footer {

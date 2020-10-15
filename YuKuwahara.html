@@ -7,7 +7,7 @@
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -21,15 +21,16 @@
     <title>Portfolio</title>
     <script
       type="text/javascript"
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     ></script>
-    <script type="text/javascript" src="YuKuwahara.js"></script>
+    <script type="text/javascript" src="./js/YuKuwahara.js"></script>
+    <script src="./js/jquery.bgswitcher.js"></script>
   </head>
 
   <body>
     <div class="top-wrapper">
       <div class="top-container">
-        <div class="heading">
+        <div class="heading" id="h-m">
           <h2 id="title">Welcome to my portfolio</h2>
           <div class="job-conditions">
             <p>ー転職希望条件ー</p>
@@ -98,7 +99,26 @@
         <div class="middle-container">
           <div class="about" id="me">
             <h2>About</h2>
-            <img src="./img/unnamed.jpg" />
+            <div class="my-image">
+              <ul>
+                <li>
+                  <img src="./img/unnamed.jpg" alt="img1" class="fadein" />
+                </li>
+                <li>
+                  <img src="./img/myface1.jpg" alt="img2" class="fadein" />
+                </li>
+                <li>
+                  <img src="./img/myface5.jpg" alt="img3" class="fadein" />
+                </li>
+              </ul>
+            </div>
+            <div id="button">
+              <ul>
+                <li><a href="#" class="target">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+              </ul>
+            </div>
             <div class="job-icon">
               <a class="url-git" href="https://github.com/yukuwaharadesu"
                 >GitHub<i class="github fab fa-github fa-2x"></i
@@ -123,30 +143,33 @@
               <p>東京農業大学国際食料情報学部卒業</p>
               <p>趣味:サッカー・フットサル・ものつくり</p>
               <p>好きな言葉・大事にしている事:　日進月歩</p>
-              <p></p>
-              <p class="title">〜Career〜</p>
-              <p>・大学までの学生時代 体育会サッカー部で15年間精進</p>
-              <p>・住友林業株式会社　住宅営業</p>
-              <p>
-                ・株式会社サンライズ・アカウンティング・インターナショナル　経理、アウトソーシング
-              </p>
-              <p></p>
-              <p class="title">〜Programming〜</p>
-              <p>2020年２月 Ruby 独学で学習</p>
-              <p>2020年５月 JavaScript スクールにて学習</p>
-              <p>
-                2020年８月
-                サーバー、DB、デザイン、マーケティング、Java、C＃、をスクールにて学習
-              </p>
-              <p>2020年10月 初案件を受注</p>
-              <p>2020年11月　共同開発案件を経験</p>
+              <br />
+              <div class="title-A">〜Career〜
+                <p>・大学までの学生時代 体育会サッカー部で15年間精進</p>
+                <p>・住友林業株式会社　住宅営業</p>
+                <p>
+                  ・株式会社サンライズ・アカウンティング・インターナショナル　経理、アウトソーシング
+                </p>
+                <br />
+              </div>
+              <div class="title-B">〜Programming〜
+                <p>2020年2月 Ruby 独学で学習</p>
+                <p>2020年5月 JavaScript スクールにて学習</p>
+                <p>
+                  2020年8月
+                  サーバー、DB、デザイン、マーケティング、Java、C＃、をスクールにて学習
+                </p>
+                <p>2020年8月 個人Blog [可能性は無限大] をスタート</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="skill-wrapper">
         <div class="skill-container" id="skills">
-          <h3><i class="skill-card fas fa-lightbulb"></i>Skill</h3>
+          <h3 class="skill-title">
+            <i class="skill-card fas fa-lightbulb"></i>Skill
+          </h3>
           <div class="icons">
             <div class="icon">
               <i class="fab fa-html5"></i>
@@ -193,8 +216,8 @@
               <p>Responsive</p>
             </div>
             <div>
-              <img class="icon-p" src="../img/25604.jpg" alt="" />
-              <p>SQL</p>
+              <img class="icon-p" src="" alt="" />
+              <p>jQuery</p>
             </div>
           </div>
         </div>
@@ -203,14 +226,17 @@
         <div class="jobs-container" id="s-c">
           <h3><i class="job-card far fa-building"></i>Job</h3>
           <div class="job-back">
+            <div class="job-box">
+              <div class="job-img"></div>
+            </div>
             <div class="jobs">
               <div class="job">
                 <h4 class="job-1">どのような業務をしたいか？</h4>
                 <div class="job-me">
-                  <p class="job-comment">
+                  <p class="job-comment-1">
                     ・人を快適に、便利にする事ができるWeb開発を業務として行っていきたい
                   </p>
-                  <p class="job-comment">
+                  <p class="job-comment-1">
                     ・１つの事に特化するというよりも多くの工程や言語を扱える業務に携わっていきたい
                   </p>
                 </div>
@@ -218,19 +244,18 @@
               <div class="job">
                 <h4 class="job-2">どのようなエンジニアになりたいか？</h4>
                 <div class="job-me">
-                  <p class="job-comment">
+                  <p class="job-comment-2">
                     ・"つくる"ことに喜びを感じられ、それにより他人により良い影響を与え続けられるエンジニアになりたい
                   </p>
-                  <p class="job-comment">
+                  <p class="job-comment-2">
                     ・常に変化をする事ができ、時代の中で人に”価値”を提供できるエンジニアになりたい
                   </p>
-                  <p class="job-comment">
+                  <p class="job-comment-2">
                     ・つくることを楽しむ事ができ、サービスによって誰かを幸せに、笑顔にできるエンジニアになりたい
                   </p>
                 </div>
               </div>
             </div>
-            <div class="job-img"></div>
           </div>
         </div>
       </div>
@@ -323,17 +348,36 @@
         </h3>
         <ul class="container-b">
           <li class="blog-A">
-            Blog~ComingSoon~
-            <a href="">
-              <img class="src-btn" src="" />
+            <p>Blog</p>
+            <p class="blog-name">~可能性は無限大~</p>
+            <a
+              href="http://kuwaharablog.sakura.ne.jp/kuwaharablog.sakura.ne.jp/home/kuwaharablog/blog/"
+            >
+              <img class="src-btn" src="./img/img:blog.png" />
             </a>
           </li>
           <li class="blog-B">
-            <h5>発信内容</h5>
-            <p></p>
-            <h5>目的</h5>
-            <p></p>
-            <h5>GitHubソースコード</h5>
+            <h2>〜学習言語〜</h2>
+            <p>・WordPress ・PHP ・HTML ・CSS</p>
+            <br />
+            <h2>〜発信内容〜</h2>
+            <p>
+              ・主にプログラミング初学者に向けて、<br />学習継続にあたってのマインドセットや<br />メンタル面のプチ情報を発信していきます。
+            </p>
+            <br />
+            <h2>〜目的〜</h2>
+            <p>
+              ・学習の継続がなかなかできない初学者<br />の為に少しでもタメになる情報を発信し<br />力になれるように
+            </p>
+            <p>・WordPressやPHPの学習の為</p>
+            <p>・発信する事により自分自身にも言い聞かせる</p>
+            <br />
+            <h2>〜Blog URL〜</h2>
+            <a
+              class="url-blog"
+              href="http://kuwaharablog.sakura.ne.jp/kuwaharablog.sakura.ne.jp/home/kuwaharablog/blog/"
+              >http://kuwaharablog.sakura.ne.jp/<br />kuwaharablog.sakura.ne.jp/home/<br />kuwaharablog/blog/</a
+            >
           </li>
         </ul>
       </div>
@@ -343,7 +387,7 @@
         </h3>
         <ul class="container-b">
           <li class="project-A">
-            Project~ComingSoon~
+            Project<br />~ComingSoon~
             <a href="">
               <img class="src-btn" src="" />
             </a>
@@ -354,7 +398,7 @@
             <h5>案件での成果物</h5>
             <p></p>
             <h5>
-              案件で経験したこと、意識して工夫した事、実際の業務に入った時の改善点
+              案件で経験したこと、<br />意識して工夫した事、実際の業務<br />に入った時の改善点
             </h5>
             <p></p>
           </li>
@@ -395,6 +439,8 @@
           <a href="https://qiita.com/kuwaharadesu"
             ><i class="fa fa-search fa-stack-1x fa-inverse fa-2x"></i
           ></a>
+          　　　　　
+          <div id="for_top"><a href="#h-m" id="hm">Top</div>
 
           <!-- 一番下のQuiitaのコードを記載するとブラウザ上で全てURLがQittaになってしまう。。。 -->
         </div>

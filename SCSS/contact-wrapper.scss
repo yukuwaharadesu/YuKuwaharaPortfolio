@@ -1,5 +1,5 @@
 .contact-wrapper {
-  background-image: url("../img/EeFikWuUwAAHVCZ.jpeg");
+  background-image: url("../img/toshin.jpg");
   background-size: cover;
   height: 800px;
 }
@@ -54,7 +54,7 @@
   border-radius: 4px;
   height: 55px;
   width: 50%;
-  background-color: lightslategray;
+  background-color: rgb(63, 61, 61);
   box-shadow: 0 3px 0 gray;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   cursor: pointer;
@@ -70,4 +70,23 @@
 .btn:active {
   box-shadow: none;
   top: 3px;
+}
+
+#for_top {
+  position: fixed;
+  bottom: 10px;
+  right: 40px;
+  z-index: 10;
+  color: black;
+  font-weight: bolder;
+  background-color: whitesmoke;
+  padding: 0;
+  margin: 0;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  opacity: 0.8;
 }
